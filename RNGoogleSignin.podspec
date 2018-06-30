@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform       = :ios, '8.0'
   s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
 
-  s.pod_target_xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/GoogleSignIn"' }
   s.source_files  = "ios/RNGoogleSignin/*.{h,m}"
   s.dependency "React"
+  s.dependency "GoogleSignIn"
 end
